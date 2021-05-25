@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 public class Taza : MonoBehaviour, IDropHandler
 {
-    public GameObject punto_mantequilla, punto_galleta, mantequilla, galleta;
+    public GameObject punto, mantequilla, galleta, cremaDeLeche, jugoDeLimon, lecheCondensada, gelatina, huevo;
     public bool correcto;
     public void OnDrop(PointerEventData eventData)
     {
@@ -13,15 +13,39 @@ public class Taza : MonoBehaviour, IDropHandler
 
             if (eventData.pointerDrag == galleta)
             {
-                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto_galleta.GetComponent<RectTransform>().anchoredPosition;
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
                 correcto = true;
             }
             else if (eventData.pointerDrag == mantequilla)
             {
-                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto_mantequilla.GetComponent<RectTransform>().anchoredPosition;
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
                 correcto = true;
             }
-
+            else if (eventData.pointerDrag == cremaDeLeche)
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
+                correcto = true;
+            }
+            else if (eventData.pointerDrag == jugoDeLimon)
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
+                correcto = true;
+            }
+            else if (eventData.pointerDrag == lecheCondensada)
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
+                correcto = true;
+            }
+            else if (eventData.pointerDrag == gelatina)
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
+                correcto = true;
+            }
+            else if (eventData.pointerDrag == huevo)
+            {
+                eventData.pointerDrag.GetComponent<RectTransform>().anchoredPosition = punto.GetComponent<RectTransform>().anchoredPosition;
+                correcto = true;
+            }
             else
             {
                 correcto = false;

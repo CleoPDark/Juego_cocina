@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SecuenciaCocinado : MonoBehaviour
 {
@@ -11,7 +12,7 @@ public class SecuenciaCocinado : MonoBehaviour
     public Sprite sprite5;
     public Sprite sprite6;
     public Sprite sprite7;
-
+    Image image1, image2, image3, image4, image5, image6, image7;
     private SpriteRenderer spriteRenderer;
 
     void Start()
@@ -25,6 +26,7 @@ public class SecuenciaCocinado : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space)) 
         {
+            Debug.Log("espacio");
             ChangeTheDamnSprite(); 
         }
     }

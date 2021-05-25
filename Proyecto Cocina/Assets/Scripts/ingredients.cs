@@ -12,6 +12,7 @@ public class ingredients : MonoBehaviour, IBeginDragHandler, IEndDragHandler, ID
     public Taza taza;
     private Transform cosa;
     public Transform tazaa;
+    public GameObject prefab;
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
